@@ -1,0 +1,1 @@
+const cfgs = require("../cfg.js");
