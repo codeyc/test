@@ -1,23 +1,15 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "backpack-examples-basic",
+  "version": "0.7.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./build/main.js",
+    "dev": "backpack dev",
+    "build": "backpack build",
+    "postinstall": "backpack build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codeyc/test.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/codeyc/test/issues"
-  },
-  "homepage": "https://github.com/codeyc/test#readme",
-  "devDependencies": {
-    "express": "^4.16.3"
+  "license": "MIT",
+  "dependencies": {
+    "backpack-core": "^0.7.0",
+    "express": "^4.16.2"
   }
 }
