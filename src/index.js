@@ -5,7 +5,7 @@ const app = express()
 app.get('/', async (req, res) => {
   try {
     const thing = await Promise.resolve({ one: 'two' }) // async/await!
-    return res.json({...thing, hello: 'world999998888'}) // object-rest-spread!
+    return res.json({...thing, hello: '7world999998888'}) // object-rest-spread!
   } catch (e) {
     return res.json({ error: e.message })
   }
