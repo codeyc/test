@@ -85,9 +85,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 const app = __WEBPACK_IMPORTED_MODULE_0_express___default()();
 
 app.get('/', async (req, res) => {
+
   try {
-    const thing = await Promise.resolve({ one: 'two' }); // async/await!
-    return res.json(Object.assign({}, thing, { hello: 'world999998888' })); // object-rest-spread!
+    const thing = await Promise.resolve({ one: 'one' }); // async/await!
+    return res.json(Object.assign({}, thing, { hello: 'ethan66' })); // object-rest-spread!
   } catch (e) {
     return res.json({ error: e.message });
   }
@@ -105,7 +106,12 @@ app.listen(port, err => {
   }
 
   console.log(`> listening on port ${port}`);
+  // console.log('dd');
 });
+
+// 本地添加1
+
+//远程添加1
 
 /***/ }),
 /* 2 */

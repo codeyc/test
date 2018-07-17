@@ -3,9 +3,10 @@ import express from 'express'
 const app = express()
 
 app.get('/', async (req, res) => {
+  
   try {
-    const thing = await Promise.resolve({ one: 'two' }) // async/await!
-    return res.json({...thing, hello: '7world999998888'}) // object-rest-spread!
+    const thing = await Promise.resolve({ one: 'one' }) // async/await!
+    return res.json({...thing, hello: 'ethan66'}) // object-rest-spread!
   } catch (e) {
     return res.json({ error: e.message })
   }
@@ -21,7 +22,8 @@ app.listen(port, (err) => {
     console.log('> in development')
   }
 
-  console.log(`> listening on port ${port}`)
+  console.log(`> listening on port ${port}`);
+  // console.log('dd');
 })
 
 // 本地添加1
